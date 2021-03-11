@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Kile Donley</title>
-        <link rel="icon" />
+        <link rel="icon" href=""/>
       </Head>
 
       <h1>Hello World!</h1>
