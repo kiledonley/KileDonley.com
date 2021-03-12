@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Kile Donley</title>
-        <link rel="icon" href=""/>
+        <link rel="icon"/>
       </Head>
 
       <h1>Welcome</h1>
