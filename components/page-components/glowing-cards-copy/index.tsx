@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./style.css";
 
 interface CardData {
