@@ -5,7 +5,6 @@ interface CardData {
   title: string;
   price: string;
   features: string[];
-  ctaLink: string;
   ctaText: string;
 }
 
@@ -49,11 +48,13 @@ const CardOverlay = ({ ctaText }) => (
 const Overlay = (cursorPosition) => (
   <div
     className="overlay cards__inner"
-    style={{
-      "--opacity": 1,
-      "--x": `${cursorPosition.x}px`,
-      "--y": `${cursorPosition.y}px`,
-    }}
+    style={
+      {
+        "--opacity": 1,
+        "--x": `${cursorPosition.x}px`,
+        "--y": `${cursorPosition.y}px`,
+      } as React.CSSProperties
+    }
   >
     {cardsData.map((card, index) => (
       <CardOverlay
@@ -64,7 +65,7 @@ const Overlay = (cursorPosition) => (
   </div>
 );
 
-const Card = ({ title, price, features, ctaLink, ctaText }) => {
+const Card = ({ title, price, features, ctaText }) => {
   return (
     <div className="cards__card card">
       <h2 className="card__heading">{title}</h2>
