@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { TabType } from "../../types/general-types.ts";
 
 //Zustand
 import { useGeneralStore } from "../../zustand/general";
 
-interface NavBarProps {
-  navigationTabs: TabType[];
-}
-
 //--> Functional Component
-const NavigationBar = ({ navigationTabs }): NavBarProps => {
+const NavigationBar = ({ navigationTabs }): React.ReactElement => {
   //Zustand
   const openModal = useGeneralStore((state) => state.openModal);
 
@@ -50,7 +45,7 @@ const NavigationBar = ({ navigationTabs }): NavBarProps => {
   };
 
   return (
-    <div className="absolute right-0 h-screen w-36 flex flex-col justify-center font-mono text-white overflow-x-hidden">
+    <div className="absolute right-0 flex h-screen w-36 flex-col justify-center overflow-x-hidden font-mono text-white">
       {navigationTabs.map((tab, index) => renderTab(tab, index))}
     </div>
   );

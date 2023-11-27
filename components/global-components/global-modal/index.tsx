@@ -16,7 +16,7 @@ const Modal = () => {
   }));
 
   //Ref
-  const modalRef = useRef();
+  const modalRef = useRef<HTMLDivElement>();
 
   // Callback
   const handleClickOutside = useCallback(
@@ -55,16 +55,16 @@ const Modal = () => {
 
   return (
     <div
-      className={`absolute top-0 left-0 w-screen h-screen bg-gray-800 bg-opacity-90 flex justify-center items-center ${
+      className={`absolute left-0 top-0 flex h-screen w-screen items-center justify-center bg-gray-800 bg-opacity-90 ${
         !ModalContent && "hidden"
       }`}
     >
       <div
         ref={modalRef}
-        className="container bg-neutral-100 flex max-w-3xl h-fit rounded-lg px-5 py-8 relative"
+        className="container relative flex h-fit max-w-3xl rounded-lg bg-neutral-100 px-5 py-8"
       >
         <button
-          className="absolute top-2 right-2 w-fit h-fit text-3xl font-bold"
+          className="absolute right-2 top-2 h-fit w-fit text-3xl font-bold"
           onClick={() => closeModal()}
         >
           X

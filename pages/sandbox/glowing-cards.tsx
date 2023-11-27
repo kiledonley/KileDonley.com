@@ -1,4 +1,4 @@
-import GlowingCards from "../../components/page-components/glowing-cards-copy/";
+import GlowingCards from "../../components/page-components/glowing-cards";
 
 export default function Home() {
   return <GlowingCards />;
