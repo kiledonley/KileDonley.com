@@ -10,7 +10,7 @@ export default function ClickForDucks() {
         <title>Kile Donley</title>
         <link rel="icon" />
       </Head>
-      <div className="text-white text-center select-none">
+      <div className="text-white select-none text-center">
         <h1 className="text-3xl">
           Hmm, looks like this page is still under construction
         </h1>

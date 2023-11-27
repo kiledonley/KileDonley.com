@@ -14,7 +14,7 @@ const navigationTabs: TabType[] = [
 
 const HomePage = () => {
   return (
-    <div className="overflow-scroll-none overflow-none h-screen w-screen bg-gray-200 bg-home-page-background bg-cover font-bold">
+    <div className="overflow-scroll-none overflow-none h-screen w-screen bg-blue bg-cover">
       <NamePlate />
       <NavigationBar navigationTabs={navigationTabs} />
     </div>
