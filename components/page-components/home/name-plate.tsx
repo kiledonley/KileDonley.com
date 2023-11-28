@@ -3,8 +3,8 @@ import React from "react";
 const NamePlate = () => {
   return (
     <div
-      className="text-white absolute top-1/2 ml-24
- flex -translate-y-1/2 transform flex-col"
+      className="text-white mx-8 my-24 flex flex-col
+ md:absolute md:top-1/2 md:my-0 md:ml-24 md:-translate-y-1/2 md:transform"
     >
       <span className="mb-10 whitespace-nowrap text-4xl font-bold md:text-8xl">
         Hi, I'm Kile.

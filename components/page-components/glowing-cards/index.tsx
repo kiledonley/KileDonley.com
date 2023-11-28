@@ -90,7 +90,6 @@ const cardSharedStyles =
   "flex-grow flex basis-56 px-8 py-6 grid items-start gap-5 bg-[#2b2b2b] text-white border border-[#eceff133] rounded-xl";
 
 const CardOverlay = ({ ctaText, color }) => (
-  //   <div id="card-overlay" className="card">
   <div
     id="card-overlay"
     className={`card ${cardSharedStyles}`}
@@ -109,7 +108,6 @@ const CardOverlay = ({ ctaText, color }) => (
 const Overlay = (x, y) => (
   <div
     className="pointer-events-none absolute inset-0 flex select-none flex-wrap gap-10"
-    // className="[opacity: 1; transition: 400ms -webkit-mask-image ease, 400ms mask-image ease] select-non pointer-events-none absolute inset-0 flex flex-wrap gap-10"
     style={getMaskGradient(x, y) as React.CSSProperties}
   >
     {cardsData.map((card, index) => (
