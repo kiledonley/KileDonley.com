@@ -21,7 +21,7 @@ const NavigationBar = ({ navigationTabs }): React.ReactElement => {
     const commonProps = {
       role: tab.type,
       tabIndex: index,
-      className: `py-2 px-6 cursor-pointer bg-neutral-900 my-3 rounded-l w-full [clip-path:polygon(0%_0%,100%_0%,100%_100%,10%_100%)] hover:opacity-80 transform transition-transform transition-opacity ease-in-out duration-700 ${
+      className: `py-2 px-6 cursor-pointer my-3 w-full text-2xl hover:opacity-80 transform transition-transform transition-opacity ease-in-out duration-700 ${
         loaded ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
       }`,
       style: { transitionDelay: `${index * 0.3}s` },
@@ -45,7 +45,7 @@ const NavigationBar = ({ navigationTabs }): React.ReactElement => {
   };
 
   return (
-    <div className="absolute right-0 flex h-screen w-36 flex-col justify-center overflow-x-hidden font-mono text-white">
+    <div className="text-white  flex w-36 flex-col justify-center overflow-x-hidden md:absolute md:right-14 md:h-screen">
       {navigationTabs.map((tab, index) => renderTab(tab, index))}
     </div>
   );

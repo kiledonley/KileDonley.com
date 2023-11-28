@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DuckZoneContainer = styled.div`
-  background-color: lightblue;
+  background-color: #203945;
   position: absolute;
   display: flex;
   width: 100%;

@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply h-full overflow-hidden;
+  }
+
   h3 {
     @apply text-xl font-bold;
   }
